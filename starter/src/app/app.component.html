@@ -1,0 +1,10 @@
+<h1>Custom Pipe for truncating descriptions</h1>
+<br><br>
+<ul>
+    <li *ngFor="let user of users">
+        <span><b><u>Name:</u></b> {{user.name}}</span>
+        <br>
+        <span><b><u>Description:</u></b> {{user.description | truncate:30}}</span>
+        <br><br>
+    </li>
+</ul>
